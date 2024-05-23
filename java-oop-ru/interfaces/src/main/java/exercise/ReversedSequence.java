@@ -1,14 +1,10 @@
 package exercise;
 
 // BEGIN
- public class ReversedSequence implements CharSequence{
-
-    private final String str;
-
+public class ReversedSequence implements CharSequence {
     private String reverseStr;
 
     public ReversedSequence(String str) {
-        this.str = str;
         reverseStr(str);
     }
 
@@ -27,7 +23,7 @@ package exercise;
     }
 
     @Override
-    public CharSequence subSequence(int start,int end) {
+    public CharSequence subSequence(int start, int end) {
         return reverseStr.subSequence(start, end);
     }
 
