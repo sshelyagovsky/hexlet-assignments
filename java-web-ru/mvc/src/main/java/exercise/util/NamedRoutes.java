@@ -1,7 +1,5 @@
 package exercise.util;
 
-import exercise.controller.PostsController;
-
 public class NamedRoutes {
 
     public static String rootPath() {

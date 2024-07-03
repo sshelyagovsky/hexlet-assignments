@@ -78,7 +78,7 @@ public class PostsController {
                     .get();
 
             var post = PostRepository.find(id)
-                    .orElseThrow(() -> new NotFoundResponse( "No Post found!"));
+                    .orElseThrow(() -> new NotFoundResponse("No Post found!"));
 
             post.setName(name);
             post.setBody(body);
